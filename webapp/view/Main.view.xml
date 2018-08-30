@@ -1,0 +1,29 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="git.vizgit-viz.controller.Main" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+				    <ObjectHeader title="GitHub Repos - List" intro="{gitModel>/full_name}" introActive="true" titleActive="true" id="__header0" backgroundDesign="Transparent"/>
+				    <Table items="{gitModel>/root}"  id="__table0">
+				        <items>
+				            <ColumnListItem counter="0" id="__item0">
+				                <cells>
+				                    
+				                    <Text text="{gitModel>full_name}" id="__text8"/>
+				                  
+				                </cells>
+				            </ColumnListItem>
+				        </items>
+				        <columns>
+				            <Column>
+				                <header>
+				                    <Label text="Repos"/>
+				                </header>
+				            </Column>
+				        </columns>
+				     </Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
